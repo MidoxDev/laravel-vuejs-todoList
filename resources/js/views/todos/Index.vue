@@ -87,9 +87,13 @@ import axios from 'axios';
             <li v-for="todo in todos" :key="todo.id" :class="{checked: todo.done}">
                 <input type="checkbox" class="ch-todo" name="" :id="todo.id" @click="doneTodo(todo)" :checked="todo.done">
                 {{ todo.task }}
-                <span @click="deleteTodo(todo)">x</span>
+                <span @click="deleteTodo(todo)">  x</span>
+
             </li>
 
+
+
         </ul>
+
     </div>
 </template>
