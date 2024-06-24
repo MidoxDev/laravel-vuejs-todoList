@@ -45,4 +45,13 @@ class TodoController extends Controller
         ]);
     }
 
+    function updateTodo($id,Request $request) {
+        $todo = Todo::findOrFail($id);
+        $todo->update(['task'=> $request->task]);
+
+        return response()->json([
+            'status'=> true,
+        ]);
+    }
+
 }

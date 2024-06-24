@@ -10,11 +10,11 @@
 
 
         <!-- Styles -->
-        @vite('resources/css/app.css')
         @vite('resources/js/app.js')
+        @vite('resources/css/app.css')
     </head>
     <body>
-        <div class="container" id="app">
+        <div class="main" id="app">
             <index />
         </div>
     </body>
